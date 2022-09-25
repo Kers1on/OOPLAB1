@@ -8,8 +8,8 @@ namespace OOPLAB1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
+            Factory start = new Factory();
+            start.main();
         }
         class Factory
         {
@@ -108,8 +108,8 @@ namespace OOPLAB1
                             Console.WriteLine("_______________________________________________________");
                             Console.WriteLine("|Energy consumption kwt*h|    Deviation from plan     |");
                             Console.WriteLine("|________________________|____________________________|");
-                            Console.WriteLine("|   planned |     fact   |    in kwt*h  |    in%      |");
-                            Console.WriteLine("|________________________|____________________________|");
+                            Console.WriteLine("|  planned  |    fact    |    in kwt*h  |    in%      |");
+                            Console.WriteLine("|________________________|______________|_____________|");
                             this.EnergyConsuption.ForEach(e =>
                             {
 
